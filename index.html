@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Survey System</h1>
+    <div id="login">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="dashboard" style="display: none;">
+      <h2>Create a New Survey</h2>
+      <input type="text" id="surveyTitle" placeholder="Survey Title">
+      <button onclick="createSurvey()">Create Survey</button>
+      <h2>Surveys</h2>
+      <ul id="surveyList"></ul>
+    </div>
+    <div id="survey" style="display: none;">
+      <h2 id="surveyQuestion"></h2>
+      <div id="surveyOptions"></div>
+      <button onclick="submitSurvey()">Submit</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

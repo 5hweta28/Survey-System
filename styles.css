@@ -1,0 +1,24 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#login, #dashboard, #survey {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#dashboard button, #survey button {
+  margin-top: 10px;
+}
